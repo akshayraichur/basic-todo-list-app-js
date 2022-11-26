@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List App</title>
+
+    <link
+      rel="shortcut icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔑</text></svg>"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔑</text></svg>"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./scripts/index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <h1>Welcome to TODO list App</h1>
+        <small>Start adding your todo list here 👇</small>
+
+        <div class="todo-container">
+          <input
+            type="text"
+            class="add-new-todo"
+            placeholder="Add your todo here...."
+            autofocus
+          />
+
+          <hr />
+          <br />
+
+          <ul class="todos">
+            <li>
+              <div class="todo-list-item">
+                <p class="todo-text">Todo will be here</p>
+                <button class="common-btn-style">
+                  <i class="fa-solid fa-pen-to-square edit-btn"></i>
+                </button>
+                <button class="common-btn-style">
+                  <i class="fa-solid fa-trash delete-btn"></i>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <template id="template-todo-list-item">
+      <div class="todo-list-item">
+        <p class="todo-text">Todo will be here</p>
+        <button class="common-btn-style">
+          <i class="fa-solid fa-pen-to-square edit-btn"></i>
+        </button>
+        <button class="common-btn-style">
+          <i class="fa-solid fa-trash delete-btn"></i>
+        </button>
+      </div>
+    </template>
+  </body>
+</html>
